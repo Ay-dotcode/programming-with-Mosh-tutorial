@@ -1,4 +1,4 @@
-import Alert from "./components/Alert";
+import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
 
 const App = () => {
@@ -6,10 +6,9 @@ const App = () => {
 
   return (
     <div>
-      <Alert>
-        Hello <span>world</span>
-      </Alert>
-
+      <Button onClick={() => console.log("Button clicked")}>My button</Button>
+      <br />
+      <br />
       <ListGroup
         heading="Cities"
         items={cities}
